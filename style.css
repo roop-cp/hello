@@ -1,0 +1,452 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+    
+}
+
+
+.sky{
+    position: relative;
+   height: 13%;
+ 
+    background-color:rgb(74, 146, 205);
+    
+}
+.head{
+   margin:0;;
+    color: #fff;
+    line-height: 1rem;
+    text-align: center;
+    padding-top: 10px;
+  
+    
+
+}
+.bird2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    
+    left: 100px;
+    z-index: 1;
+   
+    animation: pigeon 5s infinite;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    
+}
+.crow{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 1175px;
+    z-index: 1;
+   
+}
+
+.school{
+    position:relative;
+   height: 55.2%;
+   background-color: #fffefe;
+    
+   
+    /* background-image: -webkit-linear-gradient(bottom, #ebf0f4 50%, #f6fafc 50%); */
+}
+
+.foot-path{
+    position: relative;
+    
+   height: 8%;
+    background-color: rgb(177, 135, 135);
+}
+.road{
+    position: relative;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    height: 28%;
+    width: 100%;
+    background-color: rgb(52, 51, 51);
+
+}
+.lines{
+    box-sizing: border-box;
+    position: absolute;
+    border:2px dashed #fff;
+    top:45%;
+    height: 0;
+    width: 100%;
+    
+}
+.school-img{
+    position: absolute;
+    height:320px;
+    width: 400px;
+   top:0px;          
+    
+    left: 380px;;
+    z-index: 1;
+}
+.school-img:hover{
+    transform: scaleX(-1);
+}
+.bus1{
+    height:150px;
+    width: 150px;
+    
+    position: absolute;
+    top:-160px;
+    left:300px;
+   
+    animation: movebus1 5s infinite;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
+    
+}
+.bus4{
+    height:150px;
+    width: 200px;
+    
+    position: absolute;
+    top:-150px;
+    left:1500px;
+    z-index: 1;
+   
+    animation: movebus4 5s infinite;
+     animation-timing-function: ease-in-out;
+    
+}
+.bus2{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    border-radius: 20%;
+    right:20px;
+    top:-70px;
+    animation: movebus2 5s infinite;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
+}
+.scooter{
+    position: absolute;
+    height:100px;
+    width: 100px;
+    right:20px;
+    top:-40px;
+    border-radius: 20%;
+    animation: scooter 5s infinite;
+    animation-timing-function:ease-out;
+    animation-direction:normal;
+}
+.tree{
+    position: absolute;
+    height:200px;
+    width: 270px;
+    right: 70px;
+    top:-260px;
+
+}
+.teashop{
+    position: absolute;
+    height:200px;
+    width: 200px;
+    right: 30px;
+    top:-150px;
+    
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    
+    
+}
+.bus3{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right:220px;
+    z-index: 1;
+    top:-100px;
+    border-radius: 10%;
+    transform:rotateX(30deg);
+}
+.logo{
+    height: 160px;
+    width: 250px;
+    position: absolute;
+    font-weight:bolder;
+    left:170px;
+    top:5px;
+    
+    border-radius: 40%;
+    animation: mymove 5s infinite;
+    
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+
+}
+.shop{
+    position: absolute;
+    height:80px;
+    width:70px;
+    top:250px;
+    left:180px;
+}
+.stop{
+    position:absolute;
+    width:70px;
+    height:120px;
+    top:195px;
+    
+}
+.bank{
+    position:absolute;
+    width:90px;
+    height:130px;
+    top:190px;
+    left: 100px;;
+}
+
+@keyframes mymove{
+    from{left :-50px;}
+    to{right:100px;}
+}
+@keyframes pigeon{
+    from{left :-50px;}
+    to{right: 50px;}
+}
+@keyframes fly{
+    from{left :-100px;}
+    to{right:650px;}
+}
+
+
+@keyframes movebus1{
+    from{left :0px;}
+    to{right:200px;}
+    
+}
+@keyframes movebus4{
+    from{left :-10px;}
+    to{right:2000px;}
+    
+}
+ @keyframes movebus2{
+        from{right :-100px;}
+        to{right:2000px;}
+}
+@keyframes scooter{
+    from{right :-300px;}
+    to{right:2000px;}
+}
+@keyframes crow{
+    from{right: 0px;}
+    to{left: 1000px;}
+}
+@keyframes header{
+    from{right:0px;}
+    to{left:1200px;}
+    
+}
+
+
+@media only screen and (max-width:1000px) {
+    /* .sky{
+        position: relative;
+       height: 13%;
+     
+        background-color:rgb(74, 146, 205);
+        
+    } */
+    /* .head{
+       margin:0;;
+        color: #fff;
+        line-height: 1rem;
+        text-align: center;
+        padding-top: 10px;
+      
+           
+    } */
+    .bird2{
+        position: absolute;
+        height: 50px;
+        width: 70px;
+        
+        left: 40px;
+        z-index: 1;
+       
+        animation: pigeon 5s infinite;
+        animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+        
+    } 
+    .crow{
+        position: absolute;
+        height: 60px;
+        width: 80px;
+        left: 450px;
+        /* z-index: 1; */
+       
+    }
+    
+    .school{
+        position:relative;
+       height: 60%;
+       background-color: #fffefe;
+        
+       
+        /* background-image: -webkit-linear-gradient(bottom, #ebf0f4 50%, #f6fafc 50%); */
+    }
+    
+    .foot-path{
+        position: relative;
+        
+       height: 5%;
+        background-color: rgb(177, 135, 135);
+    }
+    .road{
+        position: relative;
+        border-top: 10px solid grey;
+        border-bottom: 10px solid grey;
+        height: 28%;
+        width: 100%;
+        background-color: rgb(52, 51, 51);
+    
+    }
+    .lines{
+        box-sizing: border-box;
+        position: absolute;
+        border:2px dashed #fff;
+        top:45%;
+        height: 0;
+        width: 100%;
+        
+    }
+    .school-img{
+        position: absolute;
+        height:338px;
+        width: 260px;
+       top:0px;          
+        
+        left: 160px;;
+        z-index: 1;
+    }
+    .school-img:hover{
+        transform: scaleX(-1);
+    }
+    .bus1{
+        height:150px;
+        width: 150px;
+        
+        position: absolute;
+        top:-160px;
+        left:130px;
+        z-index: 1;
+       
+        animation: movebus1 5s infinite;
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        
+        
+    }
+    .bus4{
+        height:150px;
+        width: 200px;
+        
+        position: absolute;
+        top:-150px;
+        left:1500px;
+        z-index: 1;
+       
+        animation: movebus4 5s infinite;
+         animation-timing-function: ease-in-out;
+        
+    }
+    .bus2{
+        position: absolute;
+        height: 200px;
+        width: 150px;
+        border-radius: 20%;
+        right:20px;
+        top:-70px;
+        animation: movebus2 5s infinite;
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        
+    }
+    .scooter{
+        position: absolute;
+        height:100px;
+        width: 100px;
+        right:20px;
+        top:-40px;
+        border-radius: 20%;
+        animation: scooter 5s infinite;
+        animation-timing-function:ease-out;
+        animation-direction:normal;
+    }
+    .tree{
+        position: absolute;
+        height:200px;
+        width: 270px;
+        right: -140px;
+        top:-260px;
+    
+    }
+    .teashop{
+        position: absolute;
+        height:195px;
+        width: 210px;
+        right: -150px;
+        top:-150px;
+        
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+        
+        
+    }
+    .bus3{
+        position: absolute;
+        height: 100px;
+        width: 60px;
+        right:60px;
+        z-index: 1;
+        top:-60px;
+        border-radius: 10%;
+        
+    }
+    .logo{
+        height: 160px;
+        width: 190px;
+        position: absolute;
+        font-weight:bolder;
+        left:20px;
+        top:5px;
+        
+        border-radius: 40%;
+        animation: mymove 5s infinite;
+        
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+    
+    }
+    .shop{
+        position: absolute;
+        height:60px;
+        width:50px;
+        top:285px;
+        left:75px;
+    }
+    .stop{
+        position:absolute;
+        width:30px;
+        height:120px;
+        top:220px;
+        left:-10px;
+        
+    }
+    .bank{
+        position:absolute;
+        width:60px;
+        height:110px;
+        top:227px;
+        left: 30px;;
+    }
+    
+
+}
